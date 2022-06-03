@@ -1,17 +1,17 @@
-# Advanced configuration file for Nukkit
+# Advanced configuration file for Carrot
 # Some of these settings are safe, others can break your server if modified incorrectly
-# New settings/defaults won't appear automatically on this file when upgrading.
+# New settings/defaults won't appear automatically on this file when upgrading
 
 settings:
- #Ustawienia wielojezykowe
- #Dostepne: eng, chs, cht, jpn, rus, spa, pol, bra, kor, ukr, deu, ltu
- language: "pol"
- #Wyslac wiadomosci w jezyku serwera czy pozwolic urzadzeniu wybrac
+ #Multi-language setting
+ #Available: eng, rus
+ language: "eng"
+ #Whether to send all strings translated to server locale or let the device handle them
  force-language: false
- shutdown-message: "Serwer wylaczony"
- #Pozwol wyswietlic pluginy za pomoca Query
+ shutdown-message: "Server closed"
+ #Allow listing plugins via Query
  query-plugins: true
- #Wyswietl wiadomosc w kosoli o wykorzysytywaniu przez plugin starej funkcji w API
+ #Show a console message when a plugin uses deprecated API methods
  deprecated-verbose: true
  #Number of AsyncTask workers
  #If set to auto, it'll try to detect the number of cores (and at least 4)
@@ -19,7 +19,7 @@ settings:
 
 network:
  #Threshold for batching packets, in bytes. Only these packets will be compressed
- #Set to 0 to compress everything, -1 to disable.
+ #Set to 0 to compress everything, -1 to disable
  batch-threshold: 256
  #Compression level used of Zlib when sending batched packets. Higher = more CPU, less bandwidth usage
  compression-level: 7
@@ -62,7 +62,7 @@ level-settings:
  auto-tick-rate-limit: 20
  #Sets the base tick rate (1 = 20 ticks per second, 2 = 10 ticks per second, etc.)
  base-tick-rate: 1
- #Tick all players each tick even when other settings disallow this.
+ #Tick all players each tick even when other settings disallow this
  always-tick-players: false
 
 chunk-sending:
@@ -105,7 +105,7 @@ spawn-limits:
  
 player:
  #If true, player data will be saved as players/playername.dat
- #If false, nukkit won't save player data as "dat" files, in order that plugins can do something on it.
+ #If false, carrot won't save player data as "dat" files, in order that plugins can do something on it.
  save-player-data: true
  
 aliases:
