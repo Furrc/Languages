@@ -1,6 +1,6 @@
-#Multi-Language configurations for Nukkit
+#Multi-Language configurations for Carrot
 
 We need you!
 -------------
 
-We always welcome your contribution to a multi-language Nukkit!
+We always welcome your contribution to a multi-language Carrot!
